@@ -1,7 +1,7 @@
 local options = {
   view = {
     width = 20,
-    adaptive_size = true,
+    -- adaptive_size = true,
     signcolumn = "no",
   },
   renderer = {

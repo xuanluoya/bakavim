@@ -14,6 +14,7 @@ local options = {
     "css",
     "ocaml",
     "haskell",
+    "elixir",
     "json",
   },
   sync_install = false,
