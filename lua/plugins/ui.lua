@@ -1,13 +1,9 @@
 -- Enhancements to the original UI
---  - Render pictures
---  - Render Markdown
---  - Smooth scrolling
---  - Cursor animation
 
 return {
   {
     "3rd/image.nvim",
-    event = "VeryLazy",
+    event = "BufReadPost",
     opts = {
       processor = "magick_cli",
       integrations = {
@@ -39,5 +35,20 @@ return {
     "sphamba/smear-cursor.nvim",
     event = "VeryLazy",
     opts = {}
+  },
+
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {},
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
+  },
+
+  {
+    'Bekaboo/dropbar.nvim',
+    event = "BufReadPost",
   }
 }
