@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "aquarium",
+  theme = "rosepine-dawn",
   -- transparency = true,
 
   hl_override = {
@@ -18,9 +18,9 @@ M.base46 = {
 }
 
 M.ui = {
-  tabufline = {
-    lazyload = false
-  },
+  -- tabufline = {
+  --   lazyload = false
+  -- },
 
   telescope = { style = "bordered" },
 
