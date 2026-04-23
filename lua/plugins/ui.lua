@@ -18,9 +18,8 @@ return {
   },
 
   {
-    'MeanderingProgrammer/render-markdown.nvim',
-    ft = { "markdown", "quarto" },
-    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
+    "OXY2DEV/markview.nvim",
+    event = "BufReadPost",
   },
 
   {
@@ -35,5 +34,5 @@ return {
   {
     'Bekaboo/dropbar.nvim',
     event = "BufReadPost",
-  },
+  }
 }
