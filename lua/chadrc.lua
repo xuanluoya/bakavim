@@ -8,11 +8,12 @@ local M = {}
 M.base46 = {
   theme = "rosepine-dawn",
   -- transparency = true,
+  theme_toggle = { "rosepine", "rosepine-dawn" },
 
   hl_override = {
-    ["@variable"] = { italic = true },
-    ["@parameter"] = { italic = true },
-    ["@keyword"] = { italic = true },
+    -- ["@variable"] = { italic = true },
+    -- ["@parameter"] = { italic = true },
+    -- ["@keyword"] = { italic = true },
     ["@comment"] = { italic = true },
   }
 }
@@ -22,7 +23,7 @@ M.ui = {
   --   lazyload = false
   -- },
 
-  telescope = { style = "bordered" },
+  -- telescope = { style = "bordered" },
 
   cmp = {
     style = "default",
@@ -34,7 +35,7 @@ M.ui = {
   -- },
   statusline = {
     theme = "minimal",
-    separator_style = "round",
+    -- separator_style = "round",
   },
 }
 
