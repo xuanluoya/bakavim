@@ -3,6 +3,7 @@
 return {
   {
     "3rd/image.nvim",
+    cond = not vim.g.neovide,
     event = "BufReadPost",
     opts = {
       processor = "magick_cli",
@@ -13,7 +14,6 @@ return {
           download_remote_images = true,
         },
       },
-
     },
   },
 
@@ -25,6 +25,7 @@ return {
 
   {
     "karb94/neoscroll.nvim",
+    cond = not vim.g.neovide,
     event = "VeryLazy",
     config = function()
       require('neoscroll').setup()
@@ -32,32 +33,7 @@ return {
   },
 
   {
-    "sphamba/smear-cursor.nvim",
-    event = "VeryLazy",
-    opts = {}
-  },
-
-  {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    opts = {},
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-    },
-    config = function()
-      require("noice").setup({
-        lsp = {
-          signature = {
-            enabled = false,
-          },
-        },
-      })
-    end
-  },
-
-  {
     'Bekaboo/dropbar.nvim',
     event = "BufReadPost",
-  }
+  },
 }
