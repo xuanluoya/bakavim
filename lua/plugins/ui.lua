@@ -24,7 +24,6 @@ return {
 
   {
     "karb94/neoscroll.nvim",
-    cond = not vim.g.neovide,
     event = "VeryLazy",
     config = function()
       require('neoscroll').setup()
@@ -32,7 +31,18 @@ return {
   },
 
   {
-    'Bekaboo/dropbar.nvim',
-    event = "BufReadPost",
+    "folke/noice.nvim",
+    opts = {
+      lsp = {
+        signature = {
+          enabled = false,
+        },
+      },
+    },
+    event = "VeryLazy",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
   }
 }

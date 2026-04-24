@@ -6,9 +6,9 @@
 local M = {}
 
 M.base46 = {
-  theme = "rosepine",
+  theme = "ashes",
   -- transparency = true,
-  theme_toggle = { "rosepine", "rosepine-dawn" },
+  theme_toggle = { "ashes", "rosepine-dawn" },
 
   hl_override = {
     -- ["@variable"] = { italic = true },
@@ -26,7 +26,7 @@ M.ui = {
   -- telescope = { style = "bordered" },
 
   cmp = {
-    style = "default",
+    style = "atom_colored",
     icons_left = true,
   },
 
